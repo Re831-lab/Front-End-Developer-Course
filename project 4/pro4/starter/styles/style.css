@@ -1,0 +1,43 @@
+/* General Styling */
+
+
+li {
+  list-style: none;
+}
+
+
+body {
+  display: flex;
+  flex-direction: row;
+  font-family: 'Inter', sans-serif;
+
+}
+
+main {
+  width: 100%;
+  padding: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.notVisible {
+  display: none;
+}
+
+button {
+  border: none;
+  background-color: #45e9f5;
+  color: white;
+  text-transform: uppercase;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: .5rem;
+}
+
+@media (max-width: 768px) {
+  body {
+    flex-direction: row;
+  }
+}

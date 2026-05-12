@@ -1,0 +1,117 @@
+// ============================================
+// LATEST PROJECTS BLOCK
+// ============================================
+@use '../utils/utils' as *;
+
+.latest-projects {
+  
+  padding: calc($spacing-xl / 2) $spacing-md $spacing-xl;
+  background-color: $bg-light;
+
+  &__container {
+    max-width: $breakpoint-wide;
+    margin: 0 auto;
+  }
+
+  &__heading {
+    font-size: $font-size-xxl;
+    color: $primary-color;
+    text-align: center;
+    margin-bottom: $spacing-lg;
+    position: relative;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 4px;
+      background-color: $accent-alt;
+      margin: $spacing-xs auto 0;
+      border-radius: 2px;
+    }
+
+    @include mobile { font-size: $font-size-xl; }
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: $spacing-md;
+    margin-bottom: $spacing-lg;
+
+    @include tablet  { grid-template-columns: repeat(2, 1fr); }
+    @include mobile  { grid-template-columns: 1fr; }
+  }
+
+  &__card {
+    @include card-shadow;
+    background-color: $card-bg;
+    border-radius: $border-radius-lg;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border-top: 4px solid $accent-alt;
+
+    &:focus {
+      outline: 3px solid $accent-color;
+      outline-offset: 2px;
+    }
+  }
+
+  &__card-image-wrapper {
+    overflow: hidden;
+    height: 220px;
+  }
+
+  &__card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: $transition-slow;
+
+    .latest-projects__card:hover & { transform: scale(1.06); }
+  }
+
+  &__card-body {
+    padding: $spacing-sm;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-xs;
+  }
+
+  &__card-title {
+    font-size: $font-size-lg;
+    color: $primary-color;
+    font-weight: 700;
+  }
+
+  &__card-description {
+    font-size: $font-size-sm;
+    color: $text-muted;
+    line-height: 1.7;
+    flex: 1;
+  }
+
+  &__card-link {
+    display: inline-block;
+    margin-top: $spacing-xs;
+    color: $accent-color;
+    font-size: $font-size-sm;
+    font-weight: 700;
+    transition: $transition-base;
+
+    &:hover,
+    &:focus {
+      color: $primary-color;
+      outline: 2px solid $accent-color;
+      outline-offset: 2px;
+    }
+  }
+
+  &__cta {
+    @include flex-center;
+    margin-top: $spacing-md;
+  }
+}

@@ -1,0 +1,38 @@
+li {
+  list-style: none;
+}
+
+body {
+  flex-direction: row;
+  font-family: Inter, sans-serif;
+  display: flex;
+}
+
+main {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 5%;
+  display: flex;
+}
+
+.notVisible {
+  display: none;
+}
+
+button {
+  color: #fff;
+  text-transform: uppercase;
+  background-color: #45e9f5;
+  border: none;
+  border-radius: .5rem;
+  padding: 10px;
+  font-weight: bold;
+}
+
+@media (width <= 768px) {
+  body {
+    flex-direction: row;
+  }
+}
+/*# sourceMappingURL=starter.2687eea0.css.map */

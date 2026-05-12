@@ -1,0 +1,50 @@
+// ============================================
+// VARIABLES
+// ============================================
+
+// Colors
+$primary-color:    #2d6a4f;
+$accent-color:     #52b788;
+$accent-alt:       #f4a7b9;
+$accent-yellow:    #ffd166;
+$bg-light:         #f9fafb;
+$bg-section:       #ffffff;
+$text-light:       #ffffff;
+$text-dark:        #2d3436;
+$text-muted:       #636e72;
+$card-bg:          #ffffff;
+$footer-bg:        #2d6a4f;
+
+// Typography
+$font-family-base: 'Lato', sans-serif;
+$font-size-sm:     14px;
+$font-size-base:   16px;
+$font-size-lg:     18px;
+$font-size-xl:     28px;
+$font-size-xxl:    48px;
+
+// Spacing - max 60px between sections
+$spacing-xs:  8px;
+$spacing-sm:  16px;
+$spacing-md:  32px;
+$spacing-lg:  48px;
+$spacing-xl:  60px;
+
+// Navbar
+$navbar-height:         80px;
+$navbar-height-scrolled: 56px;
+
+// Border radius
+$border-radius:    10px;
+$border-radius-lg: 20px;
+$border-radius-xl: 50px;
+
+// Transitions
+$transition-base: all 0.3s ease;
+$transition-slow: all 0.5s ease;
+
+// Breakpoints
+$breakpoint-mobile:  576px;
+$breakpoint-tablet:  768px;
+$breakpoint-desktop: 1024px;
+$breakpoint-wide:    1200px;

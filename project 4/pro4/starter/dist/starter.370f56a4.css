@@ -1,0 +1,40 @@
+form {
+  background-color: #fff;
+  border-radius: 8px;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  display: flex;
+}
+
+label {
+  color: #333;
+  margin-bottom: 8px;
+  font-weight: bold;
+  display: block;
+}
+
+input[type="text"] {
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 100%;
+  margin: 15px;
+  padding: 10px;
+  font-size: 16px;
+  transition: border-color .3s;
+}
+
+input[type="submit"] {
+  color: #fff;
+  background-color: gray;
+  border: none;
+  border-radius: .5rem;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 1rem;
+}
+/*# sourceMappingURL=starter.370f56a4.css.map */

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My First Form</title>
+</head>
+
+<body>
+  <h1>My First Form</h1>
+  <form action="#" method="post">
+    <label for="email">Email : </label>
+    <input type="email" id="email"  name="email" required>
+
+    <br><br>
+
+    <label for="password">Password:</label>
+    <input 
+      type="password" 
+      id="password" 
+      name="password"
+      minlength="6"
+      maxlength="12"
+      required>
+    <br><br>
+
+
+     <label for="age">Age:</label>
+    <input 
+      type="number" 
+      id="age" 
+      name="age"
+      min="18"
+      max="60"
+      required>
+    <br><br>
+
+
+      <label for="birthdate">Birth Date:</label>
+    <input 
+      type="date" 
+      id="birthdate" 
+      name="birthdate">
+    <br><br>
+
+
+        <label for="experience">Experience Level (1-10):</label>
+    <input 
+      type="range" 
+      id="experience" 
+      name="experience"
+      min="1"
+      max="10">
+    <br><br>
+
+
+       <fieldset>
+      <legend>Preferred Contact Method</legend>
+
+      <input type="radio" id="contact-email" name="contact" value="email" required>
+      <label for="contact-email">Email</label>
+
+      <input type="radio" id="contact-phone" name="contact" value="phone">
+      <label for="contact-phone">Phone</label>
+
+      <input type="radio" id="contact-none" name="contact" value="none">
+      <label for="contact-none">Do not contact</label>
+    </fieldset>
+
+    <br>
+
+
+     <label for="country">Country:</label>
+    <select id="country" name="country" required>
+      <option value="">-- Select --</option>
+      <option value="ps">Palestine</option>
+      <option value="jo">Jordan</option>
+      <option value="eg">Egypt</option>
+    </select>
+
+    <br><br>
+
+        <label for="message">Message:</label>
+    <textarea 
+      id="message" 
+      name="message" 
+      rows="4" 
+      cols="40"
+      maxlength="200"></textarea>
+
+    <br><br>
+
+        <button type="submit">Submit</button>
+
+  </form>
+</body>
+
+</html>

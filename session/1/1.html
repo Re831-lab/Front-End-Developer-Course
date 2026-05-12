@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DOM Example</title>
+</head>
+<body>
+
+  <h1 id="title">Hello World</h1>
+
+  <p class="text">Paragraph 1</p>
+  <p class="text">Paragraph 2</p>
+
+  <button id="btn">Click Me</button>
+
+  <script>
+    let title = document.getElementById("title");
+    let paragraphs = document.getElementsByClassName("text");
+    let allParagraphs = document.getElementsByTagName("p");
+    let firstPara = document.querySelector(".text");
+    let allParas = document.querySelectorAll(".text");
+    let button = document.getElementById("btn");
+
+    button.onclick = function () {
+      title.innerHTML = "Changed Title";
+      firstPara.style.color = "red";
+
+      for (let i = 0; i < paragraphs.length; i++) {
+        paragraphs[i].style.backgroundColor = "yellow";
+      }
+
+      allParas.forEach(function(p) {
+        p.style.fontSize = "20px";
+      });
+    };
+  </script>
+
+</body>
+</html>

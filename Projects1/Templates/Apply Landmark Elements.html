@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="This page is full of generic elements that need to be convereted to proper landmark elements.">
+  <title>Semantic Landmark Elements</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- header -->
+  <header id="top">
+    <h1>Semantic HTML</h1>
+  </header>
+
+  <!-- nav -->
+  <nav id="menu">
+    <ul class="menu-items">
+      <li>
+        <a href="#intro">Introduction to Semantic HTML</a>
+      </li>
+      <li>
+        <a href="#history">The Early Days of HTML: A Brief History</a>
+      </li>
+      <li>
+        <a href="#rise">The Rise of Semantic HTML: Why It Became Necessary</a>
+      </li>
+      <li>
+        <a href="#conclusion">Conclusion</a>
+      </li>
+      <li>
+        <a href="#links">Additional Reading</a>
+      </li>
+    </ul>
+  </nav>
+  <!-- main -->
+  <main id="primary-content">
+    <!-- section -->
+    <section id="overview">
+      <h2>
+        The Evolution and Benefits of Semantic HTML
+        <a href="#disclaimer-1">*</a>
+      </h2>
+      <!-- article -->
+      <article id="content-block">
+        <h3 id="intro" class="anchor">Introduction to Semantic HTML</h3>
+        <p>
+          HTML, or HyperText Markup Language, is the foundation of web development. It serves as the language that
+          browsers interpret to display the content of webpages. Over the years, HTML has evolved from a simple markup
+          tool to a more structured and meaningful language. The introduction of semantic HTML revolutionized the way
+          web developers structure their pages, improving both accessibility and functionality.
+
+          In this article, we will explore the history of HTML, the transition to semantic elements, and the many
+          benefits it offers in modern web development.
+        </p>
+
+        <h3 id="history" class="anchor">The Early Days of HTML: A Brief History</h3>
+        <p>The first version of HTML was developed by Tim Berners-Lee in 1991, and it consisted of a limited set of
+          tags such as &lt;p&gt;, &lt;a&gt;, and &lt;img&gt;. These early versions of HTML primarily focused on
+          presenting documents rather than providing structure or meaning to the content. The emphasis was on basic text
+          formatting and hyperlinks, with little regard for the document's semantic structure.
+
+          As the web grew, so did the complexity of webpages. HTML needed to adapt to handle multimedia content,
+          better styling, and more interactive elements. This led to the proliferation of non-semantic tags such as
+          &lt;div&gt; and &lt;span&gt;, which were widely used to structure pages, but carried no inherent meaning about
+          the content they surrounded.</p>
+
+        <h3 id="rise" class="anchor">The Rise of Semantic HTML: Why It Became Necessary</h3>
+        <p>By the time HTML4 was widely adopted, developers were relying heavily on non-semantic tags to organize
+          their pages. This posed several problems, such as making websites harder to understand for screen readers,
+          search engines, and other tools that need to interpret the structure and content of webpages.
+
+          To address this, the W3C introduced HTML5 in 2014, which came with a set of semantic elements. These
+          elements convey the meaning of the content they enclose, making it easier for both humans and machines to
+          understand the structure of a page.
+
+          For example, instead of using a &lt;div&gt; to wrap the main navigation of a webpage, developers could now
+          use a &lt;nav&gt; tag, indicating clearly that this section is for navigation. Similarly, &lt;article&gt;,
+          &lt;section&gt;, &lt;header&gt;, &lt;footer&gt;, and other semantic tags were introduced to give content a
+          more meaningful structure.</p>
+
+        <h3 id="conclusion" class="anchor">Conclusion: The Future of Semantic Web Development</h3>
+        <p>
+          The introduction of semantic HTML has significantly improved the web development landscape. It has enhanced
+          accessibility, SEO, and code maintainability, while making web content easier to understand for both humans
+          and machines. As the web continues to grow and evolve, the importance of semantic HTML will only become more
+          pronounced.
+          <br>
+          Whether you're developing a small personal website or a large-scale web application, incorporating semantic
+          HTML into your projects will lead to more sustainable, accessible, and performant outcomes. Embracing the
+          principles of semantic web development is key to creating a better web for everyone.
+        </p>
+      </article>
+      <!-- aside -->
+      <aside>
+        <h3 id="links" class="anchor">Additional Reading<a href="#disclaimer-2">*</a></h3>
+        <ul>
+          <li>
+            <a href="#">Unlocking the Power of Semantic Tags</a>
+          </li>
+          <li>
+            <a href="#">"SEO Boost with HTML5: Why Semantic Tags Matter for Search Rankings</a>
+          </li>
+          <li>
+            <a href="#">The Hidden Benefits of Semantic HTML for Web Accessibility</a>
+          </li>
+          <li>
+            <a href="#">Building Future-Proof Websites with Semantic HTML</a>
+          </li>
+          <li>
+            <a href="#">The Role of Semantic Elements in Creating Cleaner Codebases</a>
+          </li>
+        </ul>
+      </aside>
+    </section>
+    <!-- section -->
+    <section id="tips">
+      <h2>Quick Tips for Semantic HTML</h2>
+      <ul class="info-cards">
+        <li class="card">
+          <h3>Use Meaningful Elements</h3>
+          <p>Instead of relying on generic tags like <code>&lt;div&gt;</code>, make use of <code>&lt;article&gt;</code>,
+            <code>&lt;section&gt;</code>, and <code>&lt;header&gt;</code> to convey the purpose of each block of
+            content.
+          </p>
+        </li>
+        <li class="card">
+          <h3>Improve Accessibility</h3>
+          <p>Semantic tags help screen readers interpret the page’s structure, improving the browsing experience for
+            users with disabilities.</p>
+        </li>
+        <li class="card">
+          <h3>Boost SEO</h3>
+          <p>Search engines understand semantic elements better, which can lead to better ranking and visibility for
+            your website.</p>
+        </li>
+        <li class="card">
+          <h3>Enhance Maintainability</h3>
+          <p>Using appropriate tags leads to cleaner, more understandable code, making it easier to maintain and scale
+            your projects in the future.</p>
+        </li>
+      </ul>
+    </section>
+
+  </main>
+  <!-- footer -->
+  <footer id="bottom">
+    <p id="disclaimer-1" class="anchor">*This article was generated by AI and is meant as placeholder content for a web
+      development exercise. As such, this content has not been proofread or fact checked.</p>
+    <p id="disclaimer-2" class="anchor">
+      **The additional reading article titles above are entirely fabricated. Any similarities to existing article titles
+      are entirely coincidental.
+    </p>
+  </footer>
+</body>
+
+</html> 

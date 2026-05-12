@@ -1,0 +1,42 @@
+// ============================================
+// RESETS
+// ============================================
+@use '../utils/utils' as *;
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: $font-size-base;
+}
+
+body {
+  font-family: $font-family-base;
+  color: $text-dark;
+  background-color: $bg-light;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul { list-style: none; }
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.sr-only { @include sr-only; }

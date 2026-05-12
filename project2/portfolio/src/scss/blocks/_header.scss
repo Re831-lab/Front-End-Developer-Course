@@ -1,0 +1,148 @@
+// ============================================
+// HEADER BLOCK
+// ============================================
+@use '../utils/utils' as *;
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: rgba($primary-color, 0.95);
+ 
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  animation: shrink-nav linear both;
+  animation-timeline: scroll();
+  animation-range: 0px 150px;
+
+  &__nav {
+    @include flex-between;
+ 
+    padding: 0 calc($spacing-md + 8px);
+    height: $navbar-height;
+    max-width: $breakpoint-wide;
+    margin: 0 auto;
+    transition: $transition-base;
+  }
+
+  &__logo {
+    @include flex-center;
+    width: 48px;
+    height: 48px;
+    background-color: $accent-alt;
+    border-radius: 50%;
+
+    &:hover,
+    &:focus {
+      background-color: $accent-color;
+      outline: 3px solid $accent-alt;
+      outline-offset: 2px;
+      transform: scale(1.1);
+      transition: $transition-base;
+    }
+  }
+
+  &__logo-text {
+    color: $primary-color;
+    font-weight: 900;
+    font-size: $font-size-base;
+    letter-spacing: 1px;
+  }
+
+  &__menu {
+    @include flex-center;
+    gap: $spacing-md;
+
+    @include tablet {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: rgba($primary-color, 0.98);
+      backdrop-filter: blur(10px);
+      padding: $spacing-sm 0;
+      gap: 0;
+    }
+  }
+
+  &__menu-link {
+    color: $text-light;
+    font-size: $font-size-base;
+    font-weight: 400;
+    padding: $spacing-xs $spacing-sm;
+    border-radius: $border-radius;
+    transition: $transition-base;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 0;
+      height: 2px;
+      background-color: $accent-alt;
+      transition: $transition-base;
+    }
+
+    &:hover,
+    &:focus {
+      color: $accent-alt;
+      outline: 2px solid $accent-alt;
+      outline-offset: 2px;
+      &::after { width: 80%; }
+    }
+  }
+
+  &__burger-checkbox { display: none; }
+
+  &__burger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
+    padding: $spacing-xs;
+    border-radius: $border-radius;
+
+    @include tablet { display: flex; }
+  }
+
+  &__burger-line {
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: $text-light;
+    border-radius: 2px;
+    transition: $transition-base;
+  }
+
+  &__burger-checkbox:checked {
+    ~ .header__menu { display: flex; }
+    ~ .header__burger {
+      .header__burger-line {
+        &:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+        &:nth-child(2) { opacity: 0; }
+        &:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+      }
+    }
+  }
+}
+
+@keyframes shrink-nav {
+  from {
+    padding-block: 16px;
+    background-color: rgba($primary-color, 0.85);
+  }
+  to {
+    padding-block: 4px;
+    background-color: rgba($primary-color, 1);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.15);
+  }
+}

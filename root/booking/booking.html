@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Book your SkyBridge Airlines flight — choose your destination, travel dates, and cabin class.">
+    <title>Book a Flight — SkyBridge Airlines</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/booking.css">
+</head>
+<body>
+
+    <!--Navbar-->
+    <header>
+        <nav class="navbar">
+            <a href="../index.html" class="logo">Sky<span>Bridge</span></a>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html#destinations">Destinations</a></li>
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="booking.html" class="nav-cta">Book Now</a></li>
+            </ul>
+        </nav>
+
+        <!--Page Header-->
+        <div class="booking-header">
+            <h1>Book Your Flight</h1>
+            <p>Fill in your details and confirm your reservation in minutes.</p>
+        </div>
+    </header>
+
+    <!--Main Content-->
+    <main>
+        <section class="booking-section">
+
+            <form class="booking-form" action="#" method="post">
+
+                <div class="form-topbar">
+                    
+                    <h2>Flight Booking Form</h2>
+                </div>
+
+                <div class="form-inner">
+
+                    <!--Passenger Info-->
+                    <div class="form-divider">Passenger Information</div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstname">First Name</label>
+                            <input
+                                type="text"
+                                id="firstname"
+                                name="first_name"
+                                placeholder="first_name"
+                                required
+                            >
+                        </div>
+                        <div class="form-group">
+                            <label for="lastname">Last Name</label>
+                            <input
+                                type="text"
+                                id="lastname"
+                                name="last_name"
+                                placeholder="last_name"
+                                required
+                            >
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="example@email.com"
+                            required
+                        >
+                    </div>
+
+                    <!--Flight Details-->
+                    <div class="form-divider">Flight Details</div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="from">From</label>
+                            <select id="from" name="from" required>
+                                <option value="">Select departure city</option>
+                                <option value="amman">Amman (AMM)</option>
+                                <option value="cairo">Cairo (CAI)</option>
+                                <option value="dubai">Dubai (DXB)</option>
+                                <option value="istanbul">Istanbul (IST)</option>
+                                <option value="london">London (LHR)</option>
+                                <option value="paris">Paris (CDG)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="to">To</label>
+                            <select id="to" name="to" required>
+                                <option value="">Select destination city</option>
+                                <option value="amman">Amman (AMM)</option>
+                                <option value="cairo">Cairo (CAI)</option>
+                                <option value="dubai">Dubai (DXB)</option>
+                                <option value="istanbul">Istanbul (IST)</option>
+                                <option value="london">London (LHR)</option>
+                                <option value="paris">Paris (CDG)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="departure">Departure Date</label>
+                            <input
+                                type="date"
+                                id="departure"
+                                name="departure"
+                                required
+                            >
+                        </div>
+                        <div class="form-group">
+                            <label for="return-date">Return Date</label>
+                            <input
+                                type="date"
+                                id="return-date"
+                                name="return-date"
+                            >
+                        </div>
+                    </div>
+
+                    <!--Cabin-->
+                    <div class="form-divider">Cabin &amp; Class</div>
+
+                    <div class="form-group">
+                        <label for="cabin-class">Cabin Class</label>
+                        <select id="cabin-class" name="cabin-class">
+                            <option value="economy">Economy</option>
+                            <option value="premium-economy">Premium Economy</option>
+                            <option value="business">Business</option>
+                            <option value="first">First Class</option>
+                        </select>
+                    </div>
+
+                    <!--Submit-->
+                    <button type="submit" class="btn-submit">Confirm Booking </button>
+
+                </div>
+            </form>
+
+        </section>
+    </main>
+
+    <!--Footer-->
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <a href="../index.html" class="logo">Sky<span>Bridge</span></a>
+                <p>Connecting the world, one flight at a time.</p>
+            </div>
+            <ul class="footer-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html#destinations">Destinations</a></li>
+                <li><a href="booking.html">Book Now</a></li>
+            </ul>
+        </div>
+        <p class="footer-copy">&copy; 2026 SkyBridge Airlines. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

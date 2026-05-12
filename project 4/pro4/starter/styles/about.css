@@ -1,0 +1,106 @@
+/* TODO: Manually optimize CSS styling. */
+/* Remove unused and unnecessary styling and selectors */
+/* About page Styling */
+/* About Page Styling */
+/* About Page Styling */
+.aboutContainer {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutContainer img {
+  width: 400px;
+  height: 300px;
+  border-radius: 10%;
+}
+
+.textContainer {
+  width: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  padding: 0 20px 20px 50px;
+  white-space: pre-wrap;
+}
+
+.textContainer h2 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.textContainer h3 {
+  font-size: 2rem;
+}
+
+.textContainer p {
+  font-size: 1.5rem;
+}
+
+/* Media Query for Tablets (768px and below) */
+@media (max-width: 768px) {
+  .aboutContainer {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .aboutContainer img {
+    width: 300px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .textContainer {
+    width: 90%;
+    padding: 0 10px;
+    align-items: center;
+  }
+
+  .textContainer h2 {
+    font-size: 2.5rem;
+  }
+
+  .textContainer h3 {
+    font-size: 1.8rem;
+  }
+
+  .textContainer p {
+    font-size: 1.2rem;
+  }
+}
+
+/* Media Query for Mobile Devices (480px and below) */
+@media (max-width: 480px) {
+  .aboutContainer {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .aboutContainer img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+  }
+
+  .textContainer {
+    width: 100%;
+    padding: 0 15px;
+    align-items: center;
+  }
+
+  .textContainer h2 {
+    font-size: 2rem;
+  }
+
+  .textContainer h3 {
+    font-size: 1.5rem;
+  }
+
+  .textContainer p {
+    font-size: 1rem;
+    text-align: center;
+  }
+}

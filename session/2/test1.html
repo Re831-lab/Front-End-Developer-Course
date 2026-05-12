@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2> cards </h2>
+    <div id="post"></div>
+    <div id="buttonDiv"></div> 
+    
+    <script>
+        let allPosts = [];
+        const postContainer = document.getElementById('post');
+        const btnDiv = document.getElementById('buttonDiv');
+
+        fetch('https://jsonplaceholder.typicode.com/posts?_limit=50')
+        .then(response => response.json())
+        .then(data => {
+            allPosts = data;
+            render(0);      
+            makeButtons(); 
+        });
+
+       
+        function render(pageIndex) {
+            const start = pageIndex * 10;
+            const end = start + 10;
+            const chunk = allPosts.slice(start, end);
+
+            postContainer.innerHTML = chunk.map(item => `
+                <div style="border: 1px solid #ccc; padding:10px; margin:10px;"> 
+                   <h3>${item.id} - ${item.title}</h3>
+                   <p>${item.body}</p>
+                </div>
+            `).join('');
+        }
+
+        function makeButtons() {
+            btnDiv.innerHTML = ""; 
+            for (let i = 0; i < 5; i++) {
+                const btn = document.createElement('button'); 
+                btn.innerText = i + 1;
+                btn.style.background = "yellow";
+                btn.style.margin = "5px";
+                btn.style.padding = "10px";
+                btn.style.cursor = "pointer";
+                
+                btn.onclick = () => render(i); 
+                btnDiv.appendChild(btn);
+            }
+        }
+    </script>
+</body>
+</html>

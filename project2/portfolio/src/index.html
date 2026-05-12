@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Rasha Zreaq | Portfolio</title>
+  <link rel="stylesheet" href="../dist/main.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Rasha Zreaq's Portfolio - Computer Science student passionate about UI/UX design, full-stack development, and data analysis.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body id="body">
+
+  <!-- HEADER / NAVBAR -->
+  <header class="header" role="banner">
+    <nav class="header__nav" aria-label="Main navigation">
+      <a href="#main" class="header__logo" aria-label="Rasha Zreaq - Go to homepage">
+        <span class="header__logo-text">RZ</span>
+      </a>
+      <input type="checkbox" id="burger-toggle" class="header__burger-checkbox">
+      <label for="burger-toggle" class="header__burger" aria-label="Toggle navigation menu">
+        <span class="header__burger-line"></span>
+        <span class="header__burger-line"></span>
+        <span class="header__burger-line"></span>
+      </label>
+      <ul class="header__menu" id="nav-menu" role="list">
+        <li class="header__menu-item"><a class="header__menu-link" href="#latest-projects">Projects</a></li>
+        <li class="header__menu-item"><a class="header__menu-link" href="#skills">Skills</a></li>
+        <li class="header__menu-item"><a class="header__menu-link" href="#resume">Resume</a></li>
+        <li class="header__menu-item"><a class="header__menu-link" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- BIO / INTRO BANNER -->
+    <section id="bio" class="bio" aria-labelledby="bio-heading">
+      <div class="bio__container">
+        <div class="bio__image-wrapper">
+          <img
+            class="bio__image"
+            src="https://i.pinimg.com/736x/8f/a8/df/8fa8dfdea587e537ef6141bfc26d22c2.jpg"
+            alt="Rasha Zreaq - Computer Science Student and Developer"
+          >
+        </div>
+        <div class="bio__content">
+          <h1 class="bio__heading" id="bio-heading">Rasha Zreaq's  </h1>
+          <p class="bio__description">
+            Hi! I'm Rasha, a Computer Science student at Palestine Technical University.
+            I build full-stack web applications, craft UI/UX experiences in Figma,
+            and analyze data with Python. I love turning ideas into clean,
+            user-centered digital products.  
+          </p>
+          <div class="bio__actions">
+            <a href="#latest-projects" class="button button--primary">View My Work</a>
+            <a href="#contact" class="button button--secondary">Contact Me</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LATEST PROJECTS -->
+    <section id="latest-projects" class="latest-projects" aria-labelledby="projects-heading">
+      <div class="latest-projects__container">
+        <h2 class="latest-projects__heading" id="projects-heading">Latest Projects</h2>
+        <div class="latest-projects__grid" role="list">
+
+          <!-- Project 1: Bloomify -->
+          <article class="latest-projects__card" role="listitem" tabindex="0" aria-label="Project: Bloomify E-Commerce Web App">
+            <div class="latest-projects__card-image-wrapper">
+              <img
+                class="latest-projects__card-image"
+                src="img/bloomify.png"
+                alt="Bloomify flower shop e-commerce project logo"
+              >
+            </div>
+            <div class="latest-projects__card-body">
+              <h3 class="latest-projects__card-title">Bloomify – E-Commerce Web App</h3>
+              <p class="latest-projects__card-description">
+                A full-stack flower shop built with HTML, CSS, JavaScript, PHP and MySQL.
+                Features dynamic product management, cart workflow, and a responsive Figma-based design.
+              </p>
+              <a
+                class="latest-projects__card-link"
+                href="https://github.com/Re831-lab/bloomify"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="View Bloomify project on GitHub"
+              >View on GitHub →</a>
+            </div>
+          </article>
+
+          <!-- Project 2: Coffee Shop UX -->
+          <article class="latest-projects__card" role="listitem" tabindex="0" aria-label="Project: Coffee Shop UX/UI Case Study">
+            <div class="latest-projects__card-image-wrapper">
+              <img
+                class="latest-projects__card-image"
+                src="img/uiux.jpg"
+                alt="Coffee Shop UX/UI case study project logo"
+              >
+            </div>
+            <div class="latest-projects__card-body">
+              <h3 class="latest-projects__card-title">Coffee Shop App – UX/UI Case Study</h3>
+              <p class="latest-projects__card-description">
+                Redesigned a coffee-ordering app reducing navigation steps by 30%.
+                Included user research, competitive analysis, wireframes, and
+                high-fidelity prototypes using Figma.
+              </p>
+              <a
+                class="latest-projects__card-link"
+                href="https://www.behance.net/gallery/228861049/Coffee-Shop-App-UXUI-Case-Study"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="View Coffee Shop case study on Behance"
+              >View on Behance →</a>
+            </div>
+          </article>
+
+          <!-- Project 3: Bikeshare -->
+          <article class="latest-projects__card" role="listitem" tabindex="0" aria-label="Project: US Bikeshare Data Analysis">
+            <div class="latest-projects__card-image-wrapper">
+              <img
+                class="latest-projects__card-image"
+                src="img/Bikeshare Project.png"
+                alt="US Bikeshare data analysis project logo"
+              >
+            </div>
+            <div class="latest-projects__card-body">
+              <h3 class="latest-projects__card-title">US Bikeshare Data Analysis</h3>
+              <p class="latest-projects__card-description">
+                A Python tool to analyze bikeshare data across Chicago, NYC, and Washington
+                using Pandas and NumPy. Extracted insights on travel patterns and user demographics.
+              </p>
+              <a
+                class="latest-projects__card-link"
+                href="https://github.com/Re831-lab/bikeshare-project"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="View Bikeshare project on GitHub"
+              >View on GitHub →</a>
+            </div>
+          </article>
+
+        </div>
+        <div class="latest-projects__cta">
+          <a href="https://github.com/Re831-lab" class="button button--primary" target="_blank" rel="noopener noreferrer" aria-label="View all projects on GitHub">View All Projects</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer__container">
+      <p class="footer__copyright">&copy; Rasha Zreaq 2026 </p>
+    </div>
+  </footer>
+
+</body>
+</html>

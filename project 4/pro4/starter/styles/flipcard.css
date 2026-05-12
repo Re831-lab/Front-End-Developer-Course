@@ -1,0 +1,167 @@
+/* TODO: Manually optimize CSS styling. */
+/* Remove unused and unnecessary styling and selectors */
+/* Card Set Styling */
+/* Card Set Styling */
+/* Card Set Styling */
+.cardSets {
+  width: 85%;
+  height: 100%;
+  margin: 5%;
+  padding: 10px;
+  border: 2px solid lightgray;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px lightgray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardSets:hover {
+  border-color: black;
+}
+
+/* Flip Card Styling */
+.cardContainer {
+  background-color: transparent;
+  width: 500px;
+  height: 380px;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.innerCard {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 1.5s;
+  transform-style: preserve-3d;
+}
+
+.cardContainer:hover .innerCard {
+  transform: rotateY(180deg);
+}
+
+/* Term and Description Styling */
+.term,
+.description {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10%;
+  border: solid grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+
+.term {
+  font-size: 2rem;
+}
+
+.description {
+  font-size: 1.5rem;
+  background-color: #dce7e8;
+  transform: rotateY(180deg);
+}
+
+/* Page and Container Layout */
+.cardPageContainer {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.cardPageContainer button {
+  margin: 3%;
+}
+
+.cardPageContainer h2 {
+  text-align: center;
+}
+
+.setContainer {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Navigation Buttons Styling */
+.nextAndPrevBtnContainer {
+  display: flex;
+  justify-content: space-around;
+  margin: 5%;
+}
+
+.nextAndPrevBtnContainer button {
+  width: 45%;
+}
+
+/* Media Query for Tablets (768px and below) */
+@media (max-width: 768px) {
+  .cardContainer {
+    width: 90%;
+    height: 200px;
+  }
+
+  .term {
+    font-size: 1.8rem;
+  }
+
+  .description {
+    font-size: 1.3rem;
+  }
+
+  .cardPageContainer {
+    width: 90%;
+  }
+
+  .nextAndPrevBtnContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nextAndPrevBtnContainer button {
+    width: 80%;
+    margin: 5px 0;
+  }
+}
+
+/* Media Query for Mobile Devices (480px and below) */
+@media (max-width: 480px) {
+  .cardContainer {
+    width: 100%;
+    height: 200px;
+  }
+
+  .term {
+    font-size: 1.5rem;
+  }
+
+  .description {
+    font-size: 1.2rem;
+  }
+
+  .cardPageContainer {
+    width: 100%;
+  }
+
+  .nextAndPrevBtnContainer {
+    flex-direction: column;
+    align-items: center;
+    margin: 5%;
+  }
+
+  .nextAndPrevBtnContainer button {
+    width: 90%;
+    margin: 5px 0;
+  }
+}

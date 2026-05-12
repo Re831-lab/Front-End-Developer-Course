@@ -1,0 +1,52 @@
+<!-- Lack of proper indentation across the entire document -->
+<!DOCTYPE html>
+
+<html lang="en">
+
+<!-- Head element is missing -->
+<!-- Title was in the body tag instead of the head tag -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Page</title>
+</head>
+
+<body>
+  <!-- Wrong closing tag -->
+  <h1>Debugging</h1>
+
+  <!-- Extra angle bracket  -->
+  <p class="debug"> Rock out! </p>
+
+  <!-- Hyperlinks have href attributes, not src -->
+  <a href="#">Click Here</a>
+
+  <form>
+    <label for="textInput">Text with no more than 12 characters</label>
+    <!-- The for attribute needs to match an ID attribute -->
+    <!--
+      Wrong attribute type on a text input element:
+      max is for number, maxlength is for text
+    -->
+    <input id="textInput" name="textInput" type="text" maxlength="12">
+  </form>
+
+  <!-- Closing tag is missing the slash -->
+  <h2>To do list:</h2>
+  <!-- Mismatched list tags: Choose either ol or ul -->
+  <ol>
+    <li>Wake Up</li>
+    <li>Brush Teeth</li>
+    <!-- Child closing tag </li> is outside the parent element -->
+    <li>Go to Work</li>
+  </ol>
+
+  <!-- 
+    Wrong filepath, needs to reference folder
+    Alt text needs to be in quotation marks
+  -->
+  <img src="/images/image.jpg" alt="A sleeping cat">
+
+</body>
+
+</html>
