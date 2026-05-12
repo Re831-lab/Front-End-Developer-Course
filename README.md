@@ -1,61 +1,67 @@
-# 🎓 Udacity Front-End Web Developer Nanodegree Projects
+# 🌸 Front-End Developer Course — Udacity Nanodegree
 
-Welcome to my portfolio of projects completed during the **Udacity Front-End Web Developer Nanodegree**. This repository serves as a showcase of my journey through modern web development, transitioning from static layouts to complex, asynchronous web applications.
-
----
-
-## 🚀 Projects Overview
-
-### 1️⃣ Landing Page
-*   **Focus:** Responsive Web Design, DOM Manipulation.
-*   **Description:** A multi-section landing page with a dynamic navigation menu that highlights sections on scroll using the Intersection Observer API.
-*   **Key Tech:** HTML5, CSS3 (Grid & Flexbox), Vanilla JavaScript.
-
-### 2️⃣ Weather Journal App
-*   **Focus:** Asynchronous JavaScript & Web APIs.
-*   **Description:** A "Journal" application that fetches real-time weather data from the OpenWeatherMap API and updates the UI dynamically without page refreshes.
-*   **Key Tech:** Node.js, Express, Fetch API.
-
-### 3️⃣ Evaluate a News Article (NLP)
-*   **Focus:** Build Tools & Natural Language Processing.
-*   **Description:** A web tool that interacts with the MeaningCloud API to perform sentiment analysis on news articles.
-*   **Key Tech:** Webpack, Sass, Service Workers (Offline support), Jest.
-
-### 4️⃣ Travel Planner App
-*   **Focus:** Full Stack Integration & Multiple APIs.
-*   **Description:** My final capstone project. A comprehensive travel app that coordinates data from Geonames (location), Weatherbit (forecast), and Pixabay (images) to create a personalized travel itinerary.
-*   **Key Tech:** Webpack, Express, Multiple API Integration, CSS Animation.
+Projects and exercises completed as part of the **Udacity Front-End Web Developer Nanodegree** program.
 
 ---
 
-## 🛠️ Tech Stack & Skills
+## 📁 Projects
 
-| Category | Technologies |
-| :--- | :--- |
-| **Languages** | HTML5, CSS3, JavaScript (ES6+) |
-| **Styling** | Sass, Responsive Design, CSS Grid/Flexbox |
-| **Backend** | Node.js, Express.js |
-| **Tools** | Webpack, Babel, npm, Git/GitHub |
-| **Testing** | Jest (Unit Testing) |
-| **Other** | Service Workers, API Integration, Asynchronous Programming |
+### Project 1 — HTML Foundations
+Hands-on practice with core HTML concepts including semantic elements, forms, and page structure.
+
+**Topics covered:** HTML Elements · Semantic HTML · Forms · Page Templates
 
 ---
 
-## ⚙️ How to Run
+### Project 2 — Personal Portfolio (CSS & SASS)
+A personal portfolio website built with HTML and styled using SASS.
 
-1.  **Clone the repository:**
-    ```bash
-    git clone git@github.com:Re831-lab/Front-End-Developer-Course.git
-    ```
-2.  **Navigate to a project folder:**
-    ```bash
-    cd project-name
-3.   **Install dependencies:**
-(Required for projects 3 and 4)
-   ```bash
+**Topics covered:** CSS layouts · SASS · Responsive design
+
+---
+
+### Project 3 — Dynamic Portfolio
+An interactive portfolio page that loads content dynamically from JSON data files.
+
+**Highlights:**
+- Project cards and spotlight images rendered from `projectsData.json`
+- About section loaded from `aboutMeData.json`
+- Clean separation between data and UI
+
+**Tech:** HTML · CSS · JavaScript · JSON
+
+---
+
+### Project 4 — Study Night (Flashcard App)
+Optimizing and testing a pre-built flashcard web application called **Study Night**.
+
+**What was done:**
+- Configured **ESLint** and **Prettier** for code quality
+- Built **unit tests** with Mocha & Chai to verify the shuffle function logic
+- Built **end-to-end tests** with Cypress covering:
+  - Navigation between pages (Home, Card Sets, About)
+  - Happy path and unhappy path for Create Set and Add Card forms
+- Automated build and test pipeline using **Gulp**
+- Bundled and optimized the app for production using **Parcel** (minification + image compression)
+
+**Tech:** JavaScript · Parcel · Gulp · Mocha · Chai · Cypress · ESLint · Prettier
+
+**Run locally:**
+```bash
 npm install
-   ```
-4.  **Start the project:**
-    ```bash
-    npm run start
+npm run gulp        # build & serve at http://localhost:1234
+npm run gulp test   # run unit tests
+npx cypress open    # run E2E tests
 ```
+
+---
+
+## 🛠️ Tech Stack
+
+HTML · CSS · SASS · JavaScript · JSON · Node.js · Parcel · Gulp · Mocha · Cypress · ESLint
+
+---
+
+## 🎓 Certificate
+
+Completed the **Udacity Front-End Web Developer Nanodegree** program.
