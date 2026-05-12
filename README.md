@@ -1,50 +1,61 @@
-Udacity Front-End Web Developer Nanodegree Projects
-This repository contains all the projects submitted as part of the Front-End Web Developer Nanodegree program. Each project focuses on specific aspects of modern web development, from layout design to asynchronous programming and build tools.
+# 🎓 Udacity Front-End Web Developer Nanodegree Projects
 
-🚀 Projects Overview
-1. Blog Post / Landing Page
-Focus: Responsive Web Design, CSS Grid & Flexbox.
+Welcome to my portfolio of projects completed during the **Udacity Front-End Web Developer Nanodegree**. This repository serves as a showcase of my journey through modern web development, transitioning from static layouts to complex, asynchronous web applications.
 
-Description: Building a responsive landing page with a dynamic navigation menu that updates based on the sections.
+---
 
-2. Weather Journal App
-Focus: Asynchronous JavaScript & Web APIs.
+## 🚀 Projects Overview
 
-Description: An app that uses the OpenWeatherMap API to fetch weather data based on user input and dynamically updates the UI using Node.js and Express.
+### 1️⃣ Landing Page
+*   **Focus:** Responsive Web Design, DOM Manipulation.
+*   **Description:** A multi-section landing page with a dynamic navigation menu that highlights sections on scroll using the Intersection Observer API.
+*   **Key Tech:** HTML5, CSS3 (Grid & Flexbox), Vanilla JavaScript.
 
-3. Evaluate a News Article (NLP)
-Focus: Build Tools (Webpack), Service Workers, and External APIs.
+### 2️⃣ Weather Journal App
+*   **Focus:** Asynchronous JavaScript & Web APIs.
+*   **Description:** A "Journal" application that fetches real-time weather data from the OpenWeatherMap API and updates the UI dynamically without page refreshes.
+*   **Key Tech:** Node.js, Express, Fetch API.
 
-Description: A web tool that allows users to run Natural Language Processing (NLP) on articles to determine sentiment or subjectivity.
+### 3️⃣ Evaluate a News Article (NLP)
+*   **Focus:** Build Tools & Natural Language Processing.
+*   **Description:** A web tool that interacts with the MeaningCloud API to perform sentiment analysis on news articles.
+*   **Key Tech:** Webpack, Sass, Service Workers (Offline support), Jest.
 
-4. Travel App
-Focus: Full Stack (Frontend + Backend), Multiple APIs, Testing.
+### 4️⃣ Travel Planner App
+*   **Focus:** Full Stack Integration & Multiple APIs.
+*   **Description:** My final capstone project. A comprehensive travel app that coordinates data from Geonames (location), Weatherbit (forecast), and Pixabay (images) to create a personalized travel itinerary.
+*   **Key Tech:** Webpack, Express, Multiple API Integration, CSS Animation.
 
-Description: A comprehensive travel application that pulls data from Geonames, Weatherbit, and Pixabay to help users plan their trips.
+---
 
-🛠️ Tech Stack & Skills
-Languages: HTML5, CSS3, JavaScript (ES6+).
+## 🛠️ Tech Stack & Skills
 
-Frameworks/Libraries: Sass, Express.js.
+| Category | Technologies |
+| :--- | :--- |
+| **Languages** | HTML5, CSS3, JavaScript (ES6+) |
+| **Styling** | Sass, Responsive Design, CSS Grid/Flexbox |
+| **Backend** | Node.js, Express.js |
+| **Tools** | Webpack, Babel, npm, Git/GitHub |
+| **Testing** | Jest (Unit Testing) |
+| **Other** | Service Workers, API Integration, Asynchronous Programming |
 
-Tools: Webpack, Babel, Jest (Testing), Service Workers (Offline capability).
+---
 
-Concepts: Responsive Design, UI/UX Principles, API Integration, Asynchronous Programming.
+## ⚙️ How to Run
 
-⚙️ How to Run
-Clone the repository:
-
-Bash
-git clone git@github.com:Re831-lab/Front-End-Developer-Course.git
-Navigate to a specific project folder:
-
-Bash
-   cd project-name
-Install dependencies (for projects using Webpack/Node):
-
-Bash
+1.  **Clone the repository:**
+    ```bash
+    git clone git@github.com:Re831-lab/Front-End-Developer-Course.git
+    ```
+2.  **Navigate to a project folder:**
+    ```bash
+    cd project-name
+3.   **Install dependencies:**
+(Required for projects 3 and 4)
+   ```bash
 npm install
-Start the project:
-
-Bash
-npm run start
+   ```
+4.  **Start the project:**
+    ```bash
+    npm run start
+```
